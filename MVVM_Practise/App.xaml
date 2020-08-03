@@ -1,0 +1,9 @@
+﻿<Application x:Class="MVVM_Practise.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MVVM_Practise"
+             StartupUri="View\WelcomeWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
