@@ -28,5 +28,26 @@ namespace MVVM_Practise.View
         {
             this.DragMove();
         }
+
+        public static RoutedCommand ExitAppCommand = new RoutedCommand();
+
+        private void ExecuteExitAppCommand(object sender, ExecutedRoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+        private void CanExecuteExitAppCommand(object sender, CanExecuteRoutedEventArgs e)
+        {
+            Control target = e.Source as Control;
+            if (target != null)
+            {
+                e.CanExecute = true;
+            }
+            else
+            {
+                e.CanExecute = false;
+            }
+        }
     }
+
+    
 }
